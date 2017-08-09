@@ -5,6 +5,7 @@ body {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   margin: 0;
 }
 
 body h1 {
@@ -14,15 +15,53 @@ body h1 {
 	font-family: Courier, monospace;
 }
 
+body * {
+	box-sizing: border-box;
+}
+
+.row {
+	width: 100%;
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+	width: 45%;
+	text-align: left;
+	height: 100%;
+	border: 5px solid white;
+	padding: 15px;
+	margin: 2.5%;
+	-webkit-box-shadow: inset 0px 0px 0px 5px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 0px 0px 5px rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 0px 5px rgba(0,0,0,1);
+
+}
+
+.wrapper {
+	
+}
+
+@media( max-width: 700px){
+	.row {
+		display: block;
+	}
+	.cell {
+		display: block;
+		width: 90%;
+		margin: 20px 5%;
+	}
+}
+
 #content {
-   
-   width: 820px;
-   
-   padding-left: 47px;
-   padding-right: 47px;
-   
+   max-width: 800px;
+   background-color: white;
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-bottom: 20px;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
    margin:auto;
-   margin-bottom: 20px;
    
    /*
    background-color: white;
@@ -34,106 +73,51 @@ body h1 {
 body img{
 
 	border: 5px solid #880000;
-	width: 752px;
-	box-shadow: 10px 10px 5px black;
+	width: 100%;
 
 }
 
 #header {
-
 	text-align: center;
-	
+	width: 100%;
 }
 
-#toprow {
-
-	position: relative;
-	text-align: center;
-	margin: auto;
-	margin-bottom: 10px;
-
+#success {
+	background-color: #DADEEF;
+}
+#webapp {
+	background-color: #EFDADE;
 }
 
 #rejected {
-	position: relative;
-	width: 320px;
-	height: 400px;
-	padding: 20px;
-	margin: 10px;
-	border: 5px solid #880000;
-	text-align: left;
-	vertical-align:top;
-	display:inline-block;
-	background-color: #EEEEEE;
-	box-shadow: 10px 10px 5px black;
-
+	background-color: #EEEEEE;	
 }
 
 #accepted {
-	position: relative;
-	width: 320px;
-	height: 400px;
-	padding: 20px;
-	margin: 10px;
-	border: 5px solid #880000;
-	text-align: left;
-	vertical-align:top;
-	display:inline-block;
 	background-color: #EEEEE5;
-	box-shadow: 10px 10px 5px black;
-
 }
 
 #bottomrow {
 
-    position: relative;
-	text-align: center;
-	margin: auto;
-	margin-bottom: 10px;
-
 }
 
 #eaticecream {
-
-	width: 320px;
-	padding: 20px;
-	height: 200px;
-	margin: 10px;
-	border: 5px solid #880000;
-	text-align: left;
-	vertical-align:top;
-	display:inline-block;
 	background-color: #EEEAEE;
-	box-shadow: 10px 10px 5px black;
-
 }
 
 #helper {
-
-	width: 320px;
-	height: 200px;
-	padding: 20px;
-	margin: 10px;
-	border: 5px solid #880000;
-	text-align: left;
-	vertical-align:top;
-	display:inline-block;
 	background-color: #DDEEEE;
-	box-shadow: 10px 10px 5px black;
-
 }
 
 #contact {
 
 	color: black;
-	width: 735px;
+	width: 100%;
 	margin: auto;
 	padding: 10px;
 	text-align: center;
 	border: 5px solid black;
 	background-color: white;
-	box-shadow: 10px 10px 5px black;
-
 }
 
 a{
